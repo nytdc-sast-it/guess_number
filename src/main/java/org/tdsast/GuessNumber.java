@@ -10,7 +10,6 @@ public class GuessNumber {
 
         Random random = new Random();
         int number = random.nextInt(100);
-        System.out.println("生成的数字是：" + number);
 
         System.out.println("===== 猜数字游戏 =====");
         while (true) {
@@ -24,7 +23,6 @@ public class GuessNumber {
                     scanner.next();     // 清除错误的输入
                 }
             } while (inputNum == Integer.MIN_VALUE);
-            System.out.println("你刚才输入的数字是 " + inputNum);
 
             if (inputNum > number) {
                 System.out.println("大了");
