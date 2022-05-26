@@ -12,16 +12,19 @@ public class GuessNumber {
         System.out.println("生成的数字是：" + number);
 
         System.out.println("===== 猜数字游戏 =====");
-        System.out.print("请输入你猜的数字：");
-        int inputNum = scanner.nextInt();
-        System.out.println("你刚才输入的数字是 " + inputNum);
+        while (true) {
+            System.out.print("请输入你猜的数字：");
+            int inputNum = scanner.nextInt();
+            System.out.println("你刚才输入的数字是 " + inputNum);
 
-        if (inputNum > number) {
-            System.out.println("大了");
-        } else if (inputNum < number) {
-            System.out.println("小了");
-        } else {
-            System.out.println("猜对了");
+            if (inputNum > number) {
+                System.out.println("大了");
+            } else if (inputNum < number) {
+                System.out.println("小了");
+            } else {
+                System.out.println("猜对了");
+                break;
+            }
         }
 
         scanner.close();
