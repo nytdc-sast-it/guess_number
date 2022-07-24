@@ -1,4 +1,4 @@
-package org.tdsast;
+package com.sastit;
 
 import java.util.InputMismatchException;
 import java.util.Random;
